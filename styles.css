@@ -1,0 +1,211 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.name {
+  font-size: 144px;
+  font-family: "Catamaran", sans-serif;
+  color: #0e1111;
+}
+
+.title,
+.about {
+  font-family: "Catamaran", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #0e1111;
+}
+
+.about {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.works h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #0e1111;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.work a {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+  position: absolute;
+  margin-top: 80px;
+}
+
+.work p {
+  font-size: 32px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.work span {
+  font-family: "Catamaran", sans-serif;
+}
+
+.blog h3 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 84px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  margin-left: -90px;
+  margin-top: 50px;
+}
+
+.blog img {
+  max-width: 800px;
+  height: 500px;
+  margin-left: -30px;
+}
+
+.chat {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+.chat h3 {
+  width: 100%;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 84px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.chat img {
+  max-width: 500px;
+  max-height: 80vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 10rem;
+  z-index: 10;
+}
+
+.chat .stack_info {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.shop {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.shop h3 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 84px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  margin-top: 100px;
+}
+
+.aboutPage {
+  width: 100%;
+  background-color: #0e1111;
+  height: 100%;
+  color: #fffafa;
+}
+
+.about_section {
+  position: relative;
+  height: 100%;
+}
+
+.about_section img {
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 80px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.about_section span {
+  position: fixed;
+}
+
+.about_me {
+  font-size: 48px;
+  font-family: "Catamaran", sans-serif;
+  position: absolute;
+  top: 10%;
+  padding: 20px;
+}
+
+.stacks {
+  margin: 90px auto;
+  width: 40%;
+}
+
+.stacks h3 {
+  font-size: 38px;
+}
+
+.stacks p {
+  font-size: 38px;
+  font-family: "Catamaran", sans-serif;
+  padding-left: 2rem;
+}
+
+.none {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

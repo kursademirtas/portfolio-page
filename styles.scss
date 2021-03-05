@@ -1,0 +1,203 @@
+$clr-primary:#0e1111;
+$clr-secondary:#fffafa;
+$ff-primary:'Catamaran', sans-serif;
+$ff-secondary: 'Noto Sans JP', sans-serif;
+
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+}
+
+.welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+}
+
+.name {
+	font-size: 144px;
+	font-family: $ff-primary;
+	color: $clr-primary;
+}
+
+.title,
+.about {
+	font-family: $ff-primary;
+	font-size: 32px;
+	font-weight: 500;
+	color: $clr-primary;
+}
+
+.about {
+	position: fixed;
+	top:0;
+	right:0;
+	padding: 2rem;
+}
+
+.works {
+	display: flex;
+	flex-direction: column;
+
+	h2 {
+		font-family: $ff-secondary;
+		color: $clr-primary;
+		text-align: center;
+		font-size: 32px;
+		letter-spacing: 2px;
+		margin-bottom: 2rem;
+	}
+}
+
+
+.work {
+	display: flex;
+	height: 100vh;
+
+	a {
+		transform: rotate(90deg);
+		-webkit-transform: rotate(-90deg);
+		position: absolute;
+		margin-top: 80px;
+	}
+
+	p{
+		font-size: 32px;
+		font-family: $ff-secondary
+	}
+
+	span {
+		font-family:$ff-primary
+	}
+}
+
+.blog {
+
+	h3 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 84px;
+		letter-spacing: 5px;
+		font-weight: 900;
+		margin-left: -90px;
+		margin-top: 50px;
+	}
+	img {
+		max-width: 800px;
+		height: 500px;
+		margin-left: -30px;	
+	}
+
+}
+.chat {
+	flex-direction: column;
+	position: relative;
+	height: 100vh;
+
+	h3 {
+		width: 100%;
+		font-family: 'Catamaran', sans-serif;
+		font-size: 84px;
+		letter-spacing: 5px;
+		font-weight: 900;
+		position: absolute;
+		top: 0;
+		text-align: center;
+		align-self: center;
+	}
+	img {
+		max-width: 500px;
+		max-height: 80vh;
+		align-self: center;
+		margin-top: 10rem;
+		z-index: 10;
+		
+	}
+
+	.stack_info {
+		
+		width: max-content;
+		position: absolute;
+		top:50%;
+		left: 10%;
+		
+	}
+	
+}
+
+
+.shop {
+	flex-direction: row-reverse;
+	h3 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 84px;
+		letter-spacing: 5px;
+		font-weight: 900;
+		margin-top: 100px;
+	}
+
+	img {
+
+	}
+}
+
+.aboutPage{
+	width: 100%;
+	background-color: $clr-primary;
+	height: 100%;
+	color: $clr-secondary;
+}
+
+.about_section {
+	position: relative;
+	height: 100%;
+
+	img {
+		width: 400px;
+		margin-top: 100px;
+		margin-left: 80px;
+		border: 2px solid white;
+		border-radius: 2px;
+	}
+	
+	span {
+		position: fixed;
+	
+	}
+
+}
+
+.about_me{
+	font-size: 48px;
+	font-family: "Catamaran", sans-serif;
+	position: absolute;
+	top:10%;
+	padding: 20px;
+}
+
+.stacks {
+	margin: 90px auto;
+	width: 40%;
+	
+	h3 {
+		font-size: 38px;
+	}
+	
+	p {
+		font-size: 38px;
+		font-family: "Catamaran", sans-serif;
+		padding-left: 2rem;
+	}
+
+}
+
+
+
+.none {
+	display: none;
+} 
