@@ -4,17 +4,15 @@ const aboutButton = document.querySelector('.about');
 const backButton = document.querySelector('.back');
 
 function goHomePage() {
-	aboutPage.classList.add('none');
-	homePage.classList.remove('none');
-	history.pushState({page: 1}, "", "/home")
+	aboutPage.style.display = "none";
+	homePage.style.display = "block";
 }
 
 function goAboutPage() {
-	homePage.classList.add('none');
-	aboutPage.classList.remove('none');
-	history.pushState({page: 2}, "", "/about")
+	homePage.style.display = "none";
+	aboutPage.style.display = "block";
 }
-
 
 aboutButton.addEventListener('click', goAboutPage);
 backButton.addEventListener('click', goHomePage);
+
