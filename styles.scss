@@ -9,12 +9,231 @@ $ff-secondary: 'Noto Sans JP', sans-serif;
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
-	
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.welcomeLoad, 
+.welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	transition: background-color 3s;
+	transition-delay: 3s;
+}
+
+.name {
+	font-size: 9rem;
+	font-family: $ff-primary;
+	color: $clr-primary;
+	transition: color 3s;
+}
+
+.title,
+.about {
+	color: $clr-primary;
+	font-family: $ff-primary;
+	font-size: 2rem;
+	font-weight: 500;
+	transition: color 3s;
+}
+
+.about{
+	position: fixed;
+	top:0;
+	right:0;
+	padding: 2rem;
+	transition: display 10s;
+	transition-delay: 3s;
+	z-index: 100;
+}
+
+.welcomeLoad {
+	background-color: black;
+	.name {
+		color:white;
+	}
+	.title {
+		color: white;
+	}
+	.about {
+		display: none;
+	}
+}
+
+.works {
+
+	display: flex;
+	flex-wrap: nowrap;
+	width: 300vw;
+
+	h2 {
+		font-family: $ff-secondary;
+		color: $clr-primary;
+		text-align: center;
+		font-size: 2rem;
+		letter-spacing: 2px;
+		margin-bottom: 2rem;
+	}
+}
+
+.work {
+
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+
+	h3 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 5rem;
+		letter-spacing: 5px;
+		font-weight: 900;
+	}
+	.src_link{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(-90deg);
+		position: absolute;
+		margin-top:5rem;
+		text-decoration: none;
+		color: #0e1111;
+	}
+	p{
+		font-size:2rem;
+		font-family: $ff-secondary
+	}
+	span {
+		font-size:2rem;
+		font-family:$ff-primary
+	}
+}
+
+.blog {
+
+	margin-top: 100px;
+	align-self: center;
+	h3 {
+		margin-top: 4rem;
+	}
+	img {
+		height: 500px;
+		margin-left: -2rem;	
+	}
+}
+
+.chat {
+
+	flex-direction: column;
+	position: relative;
+	height: 100vh;
+
+	h3 {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		text-align: center;
+		align-self: center;
+	}
+	.site_link,img {
+		width: 288px;
+		height: 542px;
+		align-self: center;
+		margin-top: 5rem;	
+	}
+	.stack_info {
+		width: max-content;
+		position: absolute;
+		top:50%;
+		left: 10%;
+	}
+}
+
+.shop {
+	flex-direction: row-reverse;
+	h3 {
+		font-family: 'Catamaran', sans-serif;
+		font-size: 5rem;
+		letter-spacing: 5px;
+		font-weight: 900;
+		margin-top: 6rem;
+	}
+	img {
+		max-width: 50vw;
+		height: 100%;
+	}
+
 }
 
 
-@media (max-width:768px) { 
 
+.aboutPage{
+	background:
+	linear-gradient(90deg, black (22px - 1px), transparent 1%) center,
+	linear-gradient(black (22px - 1px), transparent 1%) center,white;
+	background-size: 22px 22px;
+	width: 100%;
+	height: 100%;
+	color: $clr-secondary;
+	overflow: hidden;
+}
+
+.about_section {
+	padding: 10rem 2rem;
+
+	img {
+		width: 400px;
+		margin-top: 2rem;
+		margin-left:6rem;
+		border: 2px solid white;
+		border-radius: 2px;
+	}
+	span {
+		position: fixed;
+		top:0;
+		left:0;
+		padding: 2rem;
+		font-family: $ff-primary;
+		font-size: 2rem;
+		font-weight: 500;
+		color: $ff-secondary;
+	}
+
+}
+
+.about_me{
+	font-size: 3rem;
+	font-family: "Catamaran", sans-serif;
+	padding: 1rem 4rem;
+	height: 100%;
+	margin-top: -21rem;	
+}
+
+.stacks {
+	margin: 0 auto;
+	width: 40%;
+	h3 {
+		font-size: 38px;
+	}
+	p {
+		font-size: 38px;
+		font-family: "Catamaran", sans-serif;
+		padding-left: 2rem;
+	}
+}
+
+.none {
+	display: none;
+}
+
+
+
+@media (max-width:768px) { 
 	* {
 		font-size: 10px;
 		position: static;
@@ -27,206 +246,3 @@ $ff-secondary: 'Noto Sans JP', sans-serif;
 		align-self: unset;
 	}
 }
-
-
-.welcome {
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100vh;
-	justify-content: center;
-	position: relative;
-	text-align: center;
-}
-
-.name {
-	font-size: 9rem;
-	font-family: $ff-primary;
-	color: $clr-primary;
-}
-
-.title,
-.about {
-	font-family: $ff-primary;
-	font-size: 2rem;
-	font-weight: 500;
-	color: $clr-primary;
-}
-
-.about {
-	position: fixed;
-	top:0;
-	right:0;
-	padding: 2rem;
-}
-
-.works {
-	display: flex;
-	flex-direction: column;
-
-	h2 {
-		font-family: $ff-secondary;
-		color: $clr-primary;
-		text-align: center;
-		font-size: 2rem;
-		letter-spacing: 2px;
-		margin-bottom: 2rem;
-	}
-}
-
-
-.work {
-	display: flex;
-	height: 100vh;
-
-	h3 {
-		font-family: 'Catamaran', sans-serif;
-		font-size: 5rem;
-		letter-spacing: 5px;
-		font-weight: 900;
-	}
-
-	a {
-		transform: rotate(90deg);
-		-webkit-transform: rotate(-90deg);
-		position: absolute;
-		margin-top:5rem;
-	}
-
-	p{
-		font-size:2rem;
-		font-family: $ff-secondary
-	}
-
-	span {
-		font-size:2rem;
-		font-family:$ff-primary
-	}
-}
-
-.blog {
-
-	h3 {
-		margin-top: 4rem;
-	}
-	img {
-		height: 500px;
-		margin-left: -2rem;	
-	}
-}
-
-.chat {
-	flex-direction: column;
-	position: relative;
-	height: 100vh;
-
-	h3 {
-		width: 100%;
-		position: absolute;
-		top: 0;
-		text-align: center;
-		align-self: center;
-	}
-	img {
-		width: 288px;
-		height: 542px;
-		align-self: center;
-		margin-top: 10rem;	
-	}
-
-	.stack_info {
-		width: max-content;
-		position: absolute;
-		top:50%;
-		left: 10%;
-	}
-	
-}
-
-
-.shop {
-	flex-direction: row-reverse;
-	h3 {
-		font-family: 'Catamaran', sans-serif;
-		font-size: 5rem;
-		letter-spacing: 5px;
-		font-weight: 900;
-		margin-top: 6rem;
-	}
-
-	img {
-		max-width: 50vw;
-	}
-
-}
-
-.aboutPage{
-	background:
-	linear-gradient(90deg, black (22px - 1px), transparent 1%) center,
-	linear-gradient(black (22px - 1px), transparent 1%) center,
-	white;
-	background-size: 22px 22px;
-	width: 100%;
-	height: 100%;
-	color: $clr-secondary;
-	overflow: hidden;
-}
-
-.about_section {
-	
-	padding: 10rem 2rem;
-
-
-	img {
-		width: 400px;
-		margin-top: 2rem;
-		margin-left:6rem;
-		border: 2px solid white;
-		border-radius: 2px;
-	}
-	
-	span {
-		position: fixed;
-		top:0;
-		left:0;
-		padding: 2rem;
-		font-family: $ff-primary;
-		font-size: 2rem;
-		font-weight: 500;
-		color: $ff-secondary;
-	
-	}
-
-}
-
-.about_me{
-	font-size: 3rem;
-	font-family: "Catamaran", sans-serif;
-	padding: 1rem 4rem;
-	height: 100%;
-	margin-top: -21rem;
-	
-}
-
-.stacks {
-
-	margin: 0 auto;
-	width: 40%;
-	
-	h3 {
-		font-size: 38px;
-	}
-	
-	p {
-		font-size: 38px;
-		font-family: "Catamaran", sans-serif;
-		padding-left: 2rem;
-	}
-
-}
-
-.none {
-	display: none;
-} 
-
